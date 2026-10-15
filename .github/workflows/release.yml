@@ -13,10 +13,6 @@ jobs:
       CCACHE_HARDLINK: "true"
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
-          token: ${{ secrets.GH_TOKEN }}
 
       - uses: DamianReeves/write-file-action@master
         with:
