@@ -1715,7 +1715,7 @@ public class LoginActivity extends BaseFragment implements NotificationCenter.No
             if (res.timeout == 0) {
                 res.timeout = 60;
             }
-            params.putInt("timeout", res.timeout * 1000);
+            params.putInt("timeout", res.15000);
             if (res.type instanceof TLRPC.TL_auth_sentCodeTypeCall) {
                 params.putInt("type", AUTH_TYPE_CALL);
                 params.putInt("length", res.type.length);
